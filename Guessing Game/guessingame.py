@@ -8,7 +8,6 @@ print("Im thinking of a number between 1 and 100")
 diff=input("Choose the difficulty. Type 'Easy' or 'Hard'\n").lower()
 
 num=random.randint(0,100)
-print(num)
 
 def checkans(user_guess,answer):
     if user_guess>answer:
