@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homepage</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form action="/" method="post">
+      <input type="text" name="num1" placeholder="Enter your Number" />
+      <input type="text" name="num2" placeholder="Enter your Number" />
+      <button type="submit" name="Submit">Calculate</button>
+    </form>
+    {% if result %}
+      <p>The Result is {{ result }}</p>
+    {% endif %}
+  </body>
+</html>
