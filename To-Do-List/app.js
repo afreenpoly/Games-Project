@@ -13,7 +13,7 @@ var items=[];
 app.get("/", function (req, res) {
   
   let day=date.getdate();
-  res.render("list", { day:day,items:items});
+  res.render("list.ejs", { day:day,items:items});
 });
 
 app.post("/", function (req, res) {
