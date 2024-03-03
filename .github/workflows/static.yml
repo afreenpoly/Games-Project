@@ -35,10 +35,6 @@ jobs:
       - name: Copy dicee.html from Dicegame
         run: cp ./Dicegame/dicee.html $GITHUB_WORKSPACE
 
-      # Copy index.html from Simon Game directory
-      - name: Copy index.html from Simon Game
-        run: cp "./Simon Game/index.html" $GITHUB_WORKSPACE
-
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
