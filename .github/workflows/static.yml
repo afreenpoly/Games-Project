@@ -39,13 +39,9 @@ jobs:
       - name: Copy index.html from Simon Game
         run: cp "./Simon Game/index.html" $GITHUB_WORKSPACE
 
-      # Upload entire repository
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          # Upload entire repository
-          path: '.'
-
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ github.workspace }}
