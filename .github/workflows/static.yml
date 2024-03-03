@@ -31,13 +31,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Copy HTML files from Dicegame directory
-      - name: Copy HTML files from Dicegame
-        run: cp -r ./Dicegame/* $GITHUB_WORKSPACE
+      # Copy dicee.html from Dicegame directory
+      - name: Copy dicee.html from Dicegame
+        run: cp ./Dicegame/dicee.html $GITHUB_WORKSPACE
 
-      # Copy HTML files from Simon Game directory
-      - name: Copy HTML files from Simon Game
-        run: cp -r "./Simon Game"/* $GITHUB_WORKSPACE
+      # Copy index.html from Simon Game directory
+      - name: Copy index.html from Simon Game
+        run: cp "./Simon Game/index.html" $GITHUB_WORKSPACE
 
       # Upload entire repository
       - name: Upload artifact
